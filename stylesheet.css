@@ -17,13 +17,15 @@ header {
 
 nav {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
+    position: sticky;
+    top: 0;
 }
 
 nav .logo {
@@ -39,6 +41,7 @@ nav .menu {
     display: flex;
     font-size: 1.5rem;
     margin: 2.5%;
+    text-align: center;
     justify-content: space-around;
 }
 
@@ -94,4 +97,45 @@ section h2 {
     letter-spacing: 2px;
 }
 
-.contact-box form {}
+form {
+    margin: 2%;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 15px;
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #d0f4de;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.socials h3 {
+    margin-right: 2%;
+    text-align: end;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.socials ul {
+    margin-right: 2%;
+    text-align: end;
+}
