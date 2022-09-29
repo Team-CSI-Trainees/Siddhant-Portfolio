@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media (min-width: 900px) {
+    nav .menu {
+        display: none;
+    }
+}
+
 body {
     background-image: url("bg.jpg");
     background-size: cover;
@@ -27,6 +33,7 @@ nav {
     text-transform: uppercase;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 nav .logo {
@@ -86,24 +93,36 @@ section h2 {
 }
 
 .work h3 {
-    margin-right: 2%;
-    text-align: end;
+    margin-left: 2%;
+    text-align: start;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
 .work p {
-    margin-right: 2%;
+    margin-left: 2%;
     font-size: 1rem;
-    text-align: end;
 }
 
 .contact-box h3 {
-    margin-left: 2%;
+    margin: 2%;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
+/* carosel */
+.carousel {
+    margin-top: 5%;
+}
+
+.carousel-cell {
+    height: 320px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+/* carosel */
 form {
     margin: 2%;
 }
@@ -136,13 +155,19 @@ form {
 }
 
 .socials h3 {
-    margin-right: 2%;
-    text-align: end;
+    text-align: center;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
+.fa-2x {
+    color: black;
+}
+
 .socials ul {
-    margin-right: 2%;
-    text-align: end;
+    text-align: centre;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 25%;
+    list-style: none;
 }
