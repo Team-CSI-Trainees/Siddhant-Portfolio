@@ -75,16 +75,31 @@ main {
 }
 
 /* ABOUT */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15%;
+    /* width: 100%; */
+}
 
-section h2 {
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.name h2 {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3rem;
     border-bottom: 3px solid black;
     letter-spacing: 2px;
 }
 
 .about h3 {
-    margin-left: 2%;
+    margin: 6% 2% 0 2%;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
@@ -92,6 +107,8 @@ section h2 {
 .about p {
     margin-left: 2%;
     font-size: 1rem;
+    text-align: justify;
+
 }
 
 /* ABOUT */
@@ -103,6 +120,7 @@ section h2 {
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin: 3% 0 0 0;
 }
 
 .skill-row {
@@ -163,9 +181,17 @@ section h2 {
 /* SKILLS */
 
 /* WORK */
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15%;
+    /* width: 100%; */
+}
 
 .work h3 {
-    margin-left: 2%;
+    margin: 0 2% 2% 2%;
     text-align: start;
     font-size: 1.5rem;
     letter-spacing: 2px;
@@ -174,6 +200,7 @@ section h2 {
 .work p {
     margin-left: 2%;
     font-size: 1rem;
+    text-align: justify;
 }
 
 .contact-box h3 {
@@ -232,8 +259,8 @@ form {
 
 .btn {
     margin-top: 20px;
-    margin-left: 30%;
-    background-color: #d0f4de;
+    margin-left: 32%;
+    background-color: #ade8f4;
     border: none;
     border-radius: 10px;
     font-size: 18px;
