@@ -11,6 +11,13 @@ body {
     scroll-behavior: smooth;
 }
 
+h3 {
+    padding-top: 7%;
+}
+
+h2 {
+    padding-top: 22%;
+}
 
 header {
     width: 100%;
@@ -27,8 +34,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    /* top: 0; */
     z-index: 100;
 }
 
@@ -107,10 +114,125 @@ main {
     font-size: 3rem;
     border-bottom: 3px solid black;
     letter-spacing: 2px;
+    margin-left: 10%;
+}
+
+.text-shadow-pop-br {
+    -webkit-animation: text-shadow-pop-br .6s both;
+    animation: text-shadow-pop-br .6s both
+}
+
+@-webkit-keyframes text-shadow-pop-br {
+    0% {
+        text-shadow: 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0)
+    }
+
+    100% {
+        text-shadow: 1px 1px #555, 2px 2px #555, 3px 3px #555, 4px 4px #555, 5px 5px #555, 6px 6px #555, 7px 7px #555, 8px 8px #555;
+        -webkit-transform: translateX(-8px) translateY(-8px);
+        transform: translateX(-8px) translateY(-8px)
+    }
+}
+
+@keyframes text-shadow-pop-br {
+    0% {
+        text-shadow: 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0)
+    }
+
+    100% {
+        text-shadow: 1px 1px #555, 2px 2px #555, 3px 3px #555, 4px 4px #555, 5px 5px #555, 6px 6px #555, 7px 7px #555, 8px 8px #555;
+        -webkit-transform: translateX(-8px) translateY(-8px);
+        transform: translateX(-8px) translateY(-8px)
+    }
+}
+
+.resume {
+    text-align: center;
+    border: 1px solid black;
+    margin: 5%;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #ade8f4;
+    color: #1da1f2;
+}
+
+.vibrate-2 {
+    -webkit-animation: vibrate-2 .3s linear infinite both;
+    animation: vibrate-2 .3s linear infinite both
+}
+
+@-webkit-keyframes vibrate-2 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    20% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px)
+    }
+
+    40% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px)
+    }
+
+    60% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px)
+    }
+
+    80% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px)
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes vibrate-2 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    20% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px)
+    }
+
+    40% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px)
+    }
+
+    60% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px)
+    }
+
+    80% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px)
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
 }
 
 .about h3 {
-    margin: 6% 2% 0 2%;
+    margin: 8% 2% 0 2%;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
@@ -131,7 +253,6 @@ main {
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 3% 0 0 0;
 }
 
 .skill-row {
