@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 
 h3 {
     padding-top: 7%;
+    font-weight: 800;
 }
 
 h2 {
@@ -336,22 +338,89 @@ main {
 }
 
 /* WORK */
-
-/* carosel */
-.carousel {
-    margin-top: 5%;
+/* ANIMTE */
+.aos {
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
-.carousel-cell {
-    height: 320px;
-    margin-right: 10px;
+.project-1 a {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 3%;
+    width: 115px;
+    height: 25px;
     border-radius: 10px;
-    counter-increment: carousel-cell;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px 2px grey;
 }
 
+.aos img {
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.6s;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+
+.ao a:hover,
+.ao a:focus {
+    background-color: #BFACE0;
+}
+
+.project-2 a {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 3%;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.project-3 a {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 3%;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.pro-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    .aos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-1 a {
+        margin-left: 35%;
+    }
+
+    .pro-3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* ANIMTE */
 /* carosel */
+
 /* FORM */
 .contact-box {
     display: flex;
