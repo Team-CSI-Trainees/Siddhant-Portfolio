@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    overflow-x: clip;
 }
 
 html {
@@ -116,14 +117,15 @@ main {
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
+    overflow-x: visible;
 }
 
 .name h2 {
     font-weight: 700;
     font-size: 3rem;
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     letter-spacing: 2px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 .text-shadow-pop-br {
