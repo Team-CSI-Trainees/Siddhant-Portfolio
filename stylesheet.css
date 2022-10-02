@@ -6,10 +6,13 @@
     font-weight: 500;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("bg.jpg");
     background-size: cover;
-    scroll-behavior: smooth;
 }
 
 h3 {
@@ -81,6 +84,10 @@ nav .menu a:hover {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    body {
+        width: 100%;
     }
 }
 
@@ -154,14 +161,17 @@ main {
 
 .resume {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #6c584c;
     margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 115px;
-    height: 25px;
+    height: 35px;
     border-radius: 10px;
     text-decoration: none;
-    background-color: #ade8f4;
-    color: #1da1f2;
+    background-color: #a98467;
+    color: black;
 }
 
 .vibrate-2 {
@@ -242,7 +252,7 @@ main {
 .about p {
     margin-left: 2%;
     font-size: 1rem;
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -328,7 +338,7 @@ main {
 .work p {
     margin-left: 2%;
     font-size: 1rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .contact-box h3 {
@@ -511,4 +521,3 @@ li:nth-child(4) .yo:hover {
 }
 
 /* FOOTER */
-`
